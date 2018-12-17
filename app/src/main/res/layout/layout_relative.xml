@@ -24,6 +24,33 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@id/hello_text"
+        android:layout_toRightOf="@id/hello_text"
+        android:background="#d126de"
+        android:text="RightAbove"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#5934a9"
+        android:text="layout_centerHorizontal"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center"
+        android:layout_toLeftOf="@+id/center"
+        android:background="#34a96b"
+        android:text="left below"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:background="#88e76f"
         android:text="hi~~~"
@@ -38,10 +65,21 @@
         android:textSize="32sp" />
 
     <TextView
+        android:id="@+id/right_bottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:background="#f2e056"
-        android:text="nice meet you"
+        android:background="#f28f56"
+        android:text="Right Bottom"
+        android:textSize="32sp" />ndroid:textSize="32sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/right_bottom"
+        android:layout_toLeftOf="@id/right_bottom"
+        android:background="#56c1f2"
+        android:text="left baseline"
         android:textSize="32sp" />
 </RelativeLayout>
